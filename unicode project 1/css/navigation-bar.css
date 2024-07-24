@@ -1,0 +1,74 @@
+a{
+    text-decoration:none;
+    color:black;
+    opacity: 0.8;
+}
+a:hover{
+    opacity: 1.0;
+}
+.navigation-bar{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+}
+.navigation-tools{
+    font-family: Inter;
+    width:371px;
+    height:29px;
+    display:flex;
+    justify-content: space-between;
+    text-align:center;
+}
+.restaurant-logo{
+    width: 198px;
+    height: 55px;
+    margin-top: 15px;
+}
+.vector-logo{
+    position:relative;
+}
+.vector{
+    position:absolute;
+    height: 15px;
+}
+#bowl{
+    width: 48px;
+    height: 24px;
+    left: -27px;
+}
+#circle1{
+    height:20px;
+    width:20px;
+    z-index:-1;
+    top: -11.5px;
+    left: -24px;
+}
+#circle2, #circle3{
+    width: 10px;
+    height: 10px;
+}
+#circle2{
+    left: 2px;
+    top: -13px;
+}
+#circle3{
+    top: -24px;
+    left: -7.5px;
+}
+.logo-text{
+    margin-left:30px; 
+}
+.booking{
+    background-color: rgb(234, 109, 39);
+    color: white;
+    width: 167px;
+    height: 64px;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}

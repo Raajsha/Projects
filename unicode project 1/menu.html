@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Menu</title>
+        <link rel="stylesheet" href="css/navigation-bar.css">
+        <link rel="stylesheet" href="css/ending.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width, initial-scale=1.0">
+        <style>
+            .menu-link{
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            button{
+                font-family: David Libre;
+            }
+            button:hover{
+                cursor: pointer;
+            }
+            body{
+                display:flex;
+                flex-direction:column;
+                justify-content: space-between;
+                font-family: David Libre;
+                padding-bottom: 100px;
+            }
+            a{
+                text-decoration:none;
+                color:black;
+                opacity: 0.8;
+            }
+            a:hover{
+                opacity: 1.0;
+            }
+            .background1{
+                position:relative;
+            }
+            .backg{
+                position:absolute;
+            }
+            #ellipse3, #ellipse5{
+                position: absolute;
+                top: -308px;
+                left: -8px;
+            }
+            .greeting{
+                font-size: 16px;
+                line-height: 29px;
+                width: 376px;
+                font-family: Inter;
+                margin-bottom: 50px;
+            }
+            .provision{
+                font-size:35px;
+                font-weight:bold;
+                width:510px;
+                font-size: 70px;
+                line-height:72px;
+                padding-top: 128px;
+            }
+            #book2{
+                height:54px;
+            }
+            .menu{
+                background-color: black;
+                color: white;
+                font-size: 20px;
+                width: 120px;
+                height: 54px;
+                border:none;
+                border-bottom-left-radius: 4px;
+                border-top-right-radius: 4px;
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+                margin-right: 25px;
+            }
+            .social-media{
+                border: 1px solid rgb(16, 26, 36);
+                border-radius: 50%;
+                padding: 7px;
+                margin-right: 18px;
+                margin-top: 100px;
+            }
+            #insta{
+                padding: 9.5px;
+            }
+            #bgleaf1{
+                right: 21.5px;
+                bottom: -32px;
+                z-index: 1;
+            }
+            #restaurant-look{
+                right: 180px;
+                bottom: -55px;
+                z-index: 2;
+            }
+            #dish{
+                right: 550px;
+                bottom: -42px;
+                z-index: 3;
+            }
+            .dish-intro{
+                text-align: center;
+                position:relative;
+            }
+            .background2{
+                position:absolute;
+                width:225px;
+                height:213px;
+                left: 305px;
+                top: -40px;
+                z-index: 1;
+            }
+            #special-dishes{
+                text-align:center;
+                font-size:60px;
+                line-height:65px;
+                font-family: David Libre,Arial;
+                font-weight: bold;
+                margin-bottom: 20px;
+                margin-top: 100px;
+            }
+            .intro-explain{
+                line-height: 29px;
+                font-size: 16px;
+                color: rgb(92, 101, 116);
+                text-align: center;
+                margin-bottom: 100px;
+                margin-left: 150px;
+                
+            }
+            #dish-list{
+                display:flex;
+                flex-direction: row;
+                align-items:center;
+                font-weight:bold;
+                justify-content: center;
+                padding-top: 50px;
+            }
+            .price{
+                width: 50px;
+                height:50px;
+                text-align: center;
+                background-color: black;
+                color: white;
+                border-radius: 25px;
+                font-weight: bold;
+                font-family: Inter;
+                font-size: 16px;
+                line-height: 50px;
+                position: absolute;
+                right: 25px;
+                top: -50px;
+                z-index: 10;
+                box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+            }
+            .dish-description{
+                width:265px;
+                height:309px;
+                border: 2px solid white;
+                margin-left: 35px;
+                border-top-right-radius: 9px;
+                border-bottom-left-radius: 9px;
+                border-bottom-right-radius: 45px;
+                border-top-left-radius: 45px;
+            }
+            .dish1, .dish2, .dish3, .dish4{
+                position: relative;
+            }
+            .dish{
+                height:207px;
+                margin-bottom:50px;
+                position: absolute;
+                top: -100px;
+                left: 60px;
+            }
+            .dish-name{
+                text-align: center;
+                font-size: 20px;
+                line-height: 26px;
+                font-weight: bold;
+                margin-top: 150px;
+            }
+            .dish-explain{
+                font-size: 15px;
+                line-height: 26px;
+                width: 225px;
+                color:rgb(92, 101, 116);
+                text-align: center;
+                margin-left: 18px;
+            }
+            .background3, .greeting2{
+                position: relative;
+            }
+            #bunch1, #garlic, #bunch2, #base-dish,
+            #leaf1, #leaf2, #leaf3, #leaf4{
+                position: absolute;
+            }
+            #bunch1{
+                top: 150px;
+                left: 655px;
+            }
+            #base-dish{
+                top: 250px;
+                left: 100px;
+            }
+            #leaf1{
+                top: 460px;
+                left: 100px;
+            }
+            #leaf2{
+                top: 780px;
+                left: 160px;
+            }
+            #leaf3{
+                top: 350px;
+                left: 680px;
+            }
+            #leaf4{
+                top: 700px;
+                left: 470px;
+            }
+            #welcoming{
+                font-size: 60px;
+                line-height: 65px;
+                font-weight:bold;
+                margin-bottom: 40px;
+                width: 520px;
+            }
+            .welcome{
+                padding-top: 470px;
+                padding-left: 875px;
+                margin-bottom: 400px;
+            }
+            #greet{
+                margin-bottom: 40px;
+                width: 376px;
+                font-size: 16px;
+                font-family: Inter;
+                color: rgb(92, 101, 116);
+            }
+            #garlic{
+                top: 870px;
+                right: 543px;
+            }
+            #bunch2{
+                right: 0px;
+                top: 645px;
+            }
+            .lower-part{
+                font-family: Inter;
+                color: rgb(92, 101, 116);
+            }
+            .promo-code{
+                position: relative;
+            }
+            #promo-bg{
+                position: absolute;
+                left: 175px;
+                top: 35px;
+                border-radius: 50px;
+                z-index: -10;
+            }
+            #subscribe{
+                font-size: 50px;
+                line-height: 58px;
+                font-weight: bold;
+                font-family: David Libre;
+                width: 704px;
+                text-align: center;
+                color: white;
+                margin: auto;
+                margin-top: 135px;
+            }
+            #email-input{
+                width: 667px;
+                height: 80px;
+                margin-left: 420px;
+                margin-top: 50px;
+                font-size: 18px;
+                font-family: Inter;
+                color: rgb(16, 26, 36);
+                border-radius: 20px;
+                border: none;
+            }
+            #sub{
+                position: absolute;
+                top: 63px;
+                right: 430px;
+                width: 150px;
+                height: 57px;
+                font-family: Inter;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 58px;
+                background-color: rgb(234, 109, 39);
+                color: white;
+                border: none;
+                border-radius: 10px;
+                z-index: 5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="upper-part" style="margin-bottom: 300px;">
+            <header class="navigation-bar">
+                <div class="restaurant-logo">
+                    <div class="vector-logo">
+                        <img class="vector" id="bowl" src="icons and logos/bowl.svg">
+                        <img class="vector" id="circle1" src="icons and logos/Vector (2).svg">
+                        <img class="vector" id="circle2" src="icons and logos/Vector (1).svg">
+                        <img class="vector" id="circle3" src="icons and logos/Vector (1).svg">
+                    </div>
+                    <div class="logo-text">
+                        <img src="icons and logos/restaurant name.png">
+                    </div>
+                </div>
+                <div class="navigation-tools">
+                    <a class="menu-link" href="menu.html">Menu</a>
+                    <a href="about.html">About Us</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <button class="booking">Book a table</button>
+                </div>
+            </header>
+            <div>
+                <div class="ellipses" style="position: absolute">
+                    <img id="ellipse3" src="icons and logos/Ellipse 3.svg">
+                    <img id="ellipse5" src="icons and logos/Ellipse 5.svg">
+                </div>
+                <div style="padding-left: 170px">
+                    <p class="provision">We provide the best food for you</p>
+                    <div class="greeting">
+                        Welcome to our restaurant, where gourmet dishes and warm hospitality come together to give you the best dining experience.
+                    </div>
+                    <div class="menu-booking">
+                        <button class="menu" name="Menu">Menu</button>
+                        <button class="booking" id="book2">Book a table</button>
+                    </div>
+                </div>
+                <div style="padding-left: 170px">
+                    <img class="social-media" src="icons and logos/facebook.svg">
+                    <img class="social-media" id="insta" src="icons and logos/instagram.svg">
+                    <img class="social-media" src="icons and logos/twitter.svg">
+                </div>
+            </div>
+            <div class="background1">
+                <img class="backg" id="bgleaf1" src="icons and logos/background-leaf-1.png">
+                <img class="backg" id="restaurant-look" src="icons and logos/look.png">
+                <img class="backg" id="dish" src="icons and logos/dish.svg">
+            </div>
+        </div>
+        <div class="mid-part" style="background-color: rgb(241, 241, 241);">
+            <div class="dish-intro">
+                <img class="background2" src="icons and logos/leaves.png">
+                <p id="special-dishes">Our Special Dishes</p>
+                <p class="intro-explain">The following are our chefs special dishes which fill your mouth with taste</p>
+            </div>
+            <div id="dish-list">
+                <div class="dish1">
+                    <div class="price">
+                        &#36;12
+                    </div>
+                    <img class="dish" src="icons and logos/dish1.png">
+                    <div class="dish-description">
+                        <p class="dish-name" id="dish-name-1">
+                            Lumpia with sauce
+                        </p>
+                        <p class="dish-explain">
+                            Lumpia with sauce is a popular Filipino dish featuring crispy spring rolls filled with ground pork, shrimp, and vegetables.
+                        </p>                        
+                    </div>
+                </div>
+                <div class="dish2">
+                    <div class="price">
+                        &#36;12
+                    </div>
+                    <img class="dish" src="icons and logos/dish2.png">
+                    <div class="dish-description">
+                        <p class="dish-name" id="dish-name-2">
+                            Fish and Veggies
+                        </p>
+                        <p class="dish-explain">
+                            This dish features a succulent, pan-seared filet, seasoned to perfection with a blend of aromatic herbs and spices.
+                        </p>
+                    </div>
+                </div>
+                <div class="dish3">
+                    <div class="price">
+                        &#36;12
+                    </div>
+                    <img class="dish" src="icons and logos/dish3.png">
+                    <div class="dish-description">
+                        <p class="dish-name" id="dish-name-3">
+                            Tofu Chili
+                        </p>
+                        <p class="dish-explain">
+                            Our Tofu Chili features organic tofu in a spicy tomato sauce with beans, smoky paprika, cumin, and cayenne. 
+                        </p>
+                    </div>
+                </div>
+                <div class="dish4">
+                    <div class="price">
+                        &#36;12
+                    </div>
+                    <img class="dish" src="icons and logos/dish4.png">
+                    <div class="dish-description">
+                        <p class="dish-name" id="dish-name-4">
+                            Egg and Cucumber
+                        </p>
+                        <p class="dish-explain">
+                            Savor the refreshing delight of our egg and cucumber dish, where boiled eggs meet crisp cucumber, drizzled with a tangy dressing. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="background3">
+                    <img id="bunch1" src="icons and logos/bunch1.png">
+                    <img id="garlic" src="icons and logos/lahsun.png">
+                    <img id="bunch2" src="icons and logos/bunch2.png">
+                </div>
+                <div class="greeting2">
+                    <div class="welcome">
+                        <p id="welcoming">Welcome to Our Restaurant</p>
+                        <p id="greet">Welcome to our restaurant, where gourmet dishes and warm hospitality come together.</p>
+                        <div class="menu-booking">
+                            <button class="menu" name="Menu">Menu</button>
+                            <button class="booking" id="book2">Book a table</button>
+                        </div>
+                    </div>
+                    <div class="dish-leaves">
+                        <img id="base-dish" src="icons and logos/base-dish.svg">
+                        <img id="leaf1" src="icons and logos/leaf-1.png">
+                        <img id="leaf2" src="icons and logos/leaf-2.png">
+                        <img id="leaf3" src="icons and logos/leaf-3.png">
+                        <img id="leaf4" src="icons and logos/leaf-4.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-part">
+            <div class="promo-code">
+                <img id="promo-bg" src="icons and logos/promo background.svg">
+            </div>
+            <div id="subscribe">
+                Get Our Promo Code by Subscribing to Our Newsletter
+            </div>
+            <div style="position: relative">
+                <form>
+                    <input id="email-input" type="email" placeholder="   Enter your email">
+                    <button id="sub" type="button">Subscribe</button>
+                </form>
+            </div>
+            <script>
+                function email(){
+                    window.alert("UNICODE2024 is yuor code");
+                }
+            </script>
+            <div class="ending">
+                <div class="left-section">
+                    <div class="vector-logo" id="ending-logo">
+                        <img class="vector" id="bowl" src="icons and logos/bowl.svg">
+                        <img class="vector" id="circle1" src="icons and logos/Vector (2).svg">
+                        <img class="vector" id="circle2" src="icons and logos/Vector (1).svg">
+                        <img class="vector" id="circle3" src="icons and logos/Vector (1).svg">
+                        <div class="logo-text">
+                            <img src="icons and logos/restaurant name.png">
+                        </div>
+                    </div>
+                    <div>
+                        <p id="history">
+                        Nestled in the heart of downtown, our restaurant opened its doors in 1985 as a small, family-owned bistro with a passion for traditional French cooking.
+                        </p>
+                    </div>
+                    <div class="headings">
+                        OPENING HOURS
+                    </div>
+                    <div id="timings">
+                        <div id="weekdays">
+                            Monday-Friday
+                            8:00 am to 9:00 pm
+                        </div>
+                        <div id="weekend1">
+                            Saturday<br>
+                            8:00 am to 9:00 pm
+                        </div>
+                        <div id="weekend2">
+                            Sunday
+                            CLOSED
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="lists">
+                        <p class="headings">NAVIGATION</p>
+                        <a class="items" href="menu.html">Menu</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#special-dishes">Main Dishes</a>
+                    </div>
+                    <div class="lists">
+                        <p class="headings">DISHES</p>
+                        <a class="items" href="#dish-name-1">Fish &amp Veggies</a>
+                        <a href="#dish-name-2">Tofu Chili</a>
+                        <a href="#dish-name-3">Egg &amp Cucumber</a>
+                        <a href="#dish-name-4">Lumpia w/ Sauce</a>
+                    </div>
+                    <div class="socail-media-list">
+                        <p class="headings" id="following">FOLLOW US</p>
+                        <img class="follow" id="fb" src="icons and logos/Facebook 2.svg" />
+                        <img class="follow" id="ig" src="icons and logos/instagram 2.svg" />
+                        <img class="follow" id="x" src="icons and logos/twitter 2.svg" />
+                    </div>
+                </div>
+            </div>
+            <div style="position: relative">
+                <img id="pan" src="icons and logos/pan.svg">
+            </div>
+        </div>
+    </body>
+</html>

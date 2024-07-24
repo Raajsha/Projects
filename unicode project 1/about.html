@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Us</title>
+        <link rel="stylesheet" href="css/navigation-bar.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width: device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-family: David Libre;
+            }
+            .about-link{
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            button{
+                font-family: David Libre;
+            }
+            button:hover{
+                cursor: pointer;
+            }
+            #full-garlic{
+                position: absolute;
+                opacity: 10%;
+                top: 135px;
+                left: 75px;
+            }
+            .chef-intro{
+                margin-top: 300px;
+                margin-left: 170px;
+            }
+            #chefs{
+                font-size: 60px;
+                line-height: 65px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            #chef-explanation{
+                font-family: Inter;
+                width: 376px;
+                font-size: 16px;
+                line-height: 29px;
+                padding-left: 5px;
+                color: rgb(92, 101, 116);
+            }
+            #standards-list{
+                display: flex;
+                justify-content: center;
+                margin-left: -520px;
+                margin-top: 50px;
+                font-family: Inter;
+                color: rgb(92, 101, 116);
+                font-size: 15px;
+                line-height: 21px;
+            }
+            #right-list{
+                display: flex;
+                flex-direction: column;
+                margin-right: 30px;
+            }
+            .standard{
+                display: flex;
+                margin-bottom: 30px;
+            }
+            .check-mark{
+                color: white;
+                width: 24px;
+                height: 24px;
+                line-height: 25px;
+                background-color: rgb(234, 109,39);
+                border-radius: 50%;
+                text-align: center;
+                margin-top: 12px;
+                margin-right: 10px;
+            }
+            #chef-photo{
+                position: relative;
+            }
+            .standard-desc{
+                width: 259px;
+            }
+            .menu-booking{
+                margin-left: 330px;
+            }
+            .menu{
+                background-color: black;
+                color: white;
+                font-size: 20px;
+                width: 120px;
+                height: 54px;
+                border:none;
+                border-bottom-left-radius: 4px;
+                border-top-right-radius: 4px;
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+                margin-right: 25px;
+            }
+            #book2{
+                height: 54px;
+            }
+            #chef{
+                position: absolute;
+                bottom: -70px;
+                right: 120px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="navigation-bar">
+            <div class="restaurant-logo">
+                <div class="vector-logo">
+                    <img class="vector" id="bowl" src="icons and logos/bowl.svg">
+                    <img class="vector" id="circle1" src="icons and logos/Vector (2).svg">
+                    <img class="vector" id="circle2" src="icons and logos/Vector (1).svg">
+                    <img class="vector" id="circle3" src="icons and logos/Vector (1).svg">
+                </div>
+                <div class="logo-text">
+                    <img src="icons and logos/restaurant name.png">
+                </div>
+            </div>
+            <div class="navigation-tools">
+                <a href="menu.html">Menu</a>
+                <a class="about-link" href="about.html">About Us</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <button class="booking">Book a table</button>
+            </div>
+        </header>
+        <div style="position: relative">
+            <img id="full-garlic" src="icons and logos/full-garlic.svg">
+        </div>
+        <div class="chef-intro">
+            <p id="chefs">
+                Our Expert Chefs
+            </p>
+            <p id="chef-explanation">
+                Our restaurant hires only the best chefs well versed in their art.
+                We make sure all standards are met so that you can have a good experience.
+            </p>
+        </div>
+        <div id="standards-list">
+            <div id="right-list">
+                <div class="standard">
+                    <div class="check-mark">
+                        &#x2714;
+                    </div>
+                    <p class="standard-desc">
+                        Proper hygiene is maintained in the kitchen
+                    </p>
+                </div>
+                <div class="standard">
+                    <div class="check-mark">
+                        &#x2714;
+                    </div>
+                    <p class="standard-desc">
+                        Every ingredient is quality checked before it is used in the kitchen
+                    </p>
+                </div>
+                <div class="standard">
+                    <div class="check-mark">
+                        &#x2714;
+                    </div>
+                    <p class="standard-desc">
+                        The glassware and silverware are made sterile after every use
+                    </p>
+                </div>
+            </div>
+            <div id="left-list">
+                <div class="standard">
+                    <div class="check-mark">
+                        &#x2714;
+                    </div>
+                    <p class="standard-desc">
+                        Proper hygiene is maintained in the kitchen
+                    </p>
+                </div>
+                <div class="standard">
+                    <div class="check-mark">
+                        &#x2714;
+                    </div>
+                    <p class="standard-desc">
+                        Proper hygiene is maintained in the kitchen
+                    </p>
+                </div>
+                <div class="standard">
+                    <div class="check-mark">
+                        &#x2714;
+                    </div>
+                    <p class="standard-desc">
+                        Proper hygiene is maintained in the kitchen
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-booking">
+            <button class="menu" name="Menu">Menu</button>
+            <button class="booking" id="book2">Book a table</button>
+        </div>
+        <div id="chef-photo">
+            <img id="chef" src="icons and logos/chef.svg">
+        </div>
+    </body>
+</html>

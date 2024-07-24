@@ -1,0 +1,91 @@
+.ending{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: -50px; 
+}
+.left-section{
+    font-family: Inter;
+    color: rgb(92, 101, 116);
+    font-size: 16px;
+    margin-top: 10px;
+}
+#history{
+    width:408px;
+    line-height: 29px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+#ending-logo{
+    margin-left: 25px;
+}
+.headings{
+    font-size: 12px;
+    line-height: 40px;
+    font-weight: bold;
+    color: black;
+}
+#timings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#weekdays, #weekend1{
+    width: 149px;
+    line-height: 29px;
+    margin-right: 40px;
+}
+#weekend2{
+    width: 64px;
+    line-height: 29px;
+}
+.right-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 100px;
+    height: 197px;
+}
+.items{
+    margin-top: -22px;
+}
+.following{
+    margin-left: -20px;
+}
+.social-media-list{
+    display: flex;
+    align-items: center;
+}
+.follow{
+    margin-right: 15px;
+}
+#pan{
+    position: absolute;
+    left: 445px;
+    bottom: -120px;
+    z-index: -1;
+}
+#fb{
+    padding: 2px;
+}
+#ig{
+    padding: 8px;
+}
+#x{
+    padding: 4.5px;
+    margin-left: 5px;
+}
+#pan{
+    position: absolute;
+    z-index: -1;
+    left: 445px;
+    bottom: -120px;
+}

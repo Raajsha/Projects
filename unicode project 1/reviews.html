@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Reviews</title>
+        <link rel="stylesheet" href="css/navigation-bar.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width: device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-family: David Libre;
+                background-color: rgb(241, 241, 241);
+                margin-bottom: 0px;
+            }
+            .reviews-link{
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            button{
+                font-family: David Libre;
+            }
+            button:hover{
+                cursor: pointer;
+            }
+            #pan2{
+                position: absolute;
+                left: -209px;
+                top: 240px;
+                z-index: -1;
+            }
+            #happy-cus{
+                font-size: 60px;
+                font-weight: bold;
+                line-height: 65px;
+            }
+            #review-intro{
+                margin-top: 150px;
+                text-align: center;
+            }
+            #review-below{
+                width: 376px;
+                margin: auto;
+                font-size: 16px;
+                line-height: 29px;
+                font-family: Inter;
+                margin-top: -30px;
+                margin-bottom: 218px;
+            }
+            .rating{
+                color: rgb(255, 187, 0,);
+            }
+            .picture{
+                position: relative;
+            }
+            .profile-pic{
+                position: absolute;
+                width: 109px;
+                border-radius: 50%;
+                left: 260px;
+                top: -55px;;
+            }
+            .review-description, .review-name,
+            .review-designation{
+                font-size: 16px;
+                line-height: 29px;
+                font-family: Inter;
+            }
+            .review{
+                background-color: white;
+                width: 639px;
+                height: 391px;
+                margin: auto;
+                text-align: center;
+                border-top-right-radius: 40px;
+                border-bottom-left-radius: 40px;
+                border-bottom-right-radius: 100px;
+                border-top-left-radius: 100px;
+                box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.07)0.07;
+                margin-bottom: 150px;
+            }
+            .nd{
+                margin-top: 40px;
+            }
+            .review-description{
+                width: 383px;
+                margin: auto;
+                color: rgb(92, 101, 116);
+                padding-top: 100px;
+            }
+            .review-name{
+                font-weight: bold;
+            }
+            .review-designation{
+                font-size: 15px;
+            }        
+        </style>
+    </head>
+    <body>
+        <header class="navigation-bar">
+            <div class="restaurant-logo">
+                <div class="vector-logo">
+                    <img class="vector" id="bowl" src="icons and logos/bowl.svg">
+                    <img class="vector" id="circle1" src="icons and logos/Vector (2).svg">
+                    <img class="vector" id="circle2" src="icons and logos/Vector (1).svg">
+                    <img class="vector" id="circle3" src="icons and logos/Vector (1).svg">
+                </div>
+                <div class="logo-text">
+                    <img src="icons and logos/restaurant name.png">
+                </div>
+            </div>
+            <div class="navigation-tools">
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About Us</a>
+                <a class="reviews-link" href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <button class="booking">Book a table</button>
+            </div>
+        </header>
+        <div style="position: relative">
+            <img id="pan2" src="icons and logos/pan 2.svg">
+        </div>
+        <div id="review-intro">
+            <p id="happy-cus">
+                Our Happy Customers
+            </p>
+            <p id="review-below">
+                Below are some of the reviews from some of our satisfied customers who have dined at our restaurant
+            </p>
+        </div>
+        <div class="review">
+            <div class="picture">
+                <img class="profile-pic" src="icons and logos/profile-1.svg">
+            </div>
+            <div class="rating">
+
+            </div>
+            <p class="review-description">
+                Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit.
+                Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante.
+                Proin iaculis platea ipsum sagittis ac eu aliquam quis. Ornare tincidunt tempus semper
+            </p>
+            <div class="nd">
+                <div class="review-name">
+                    Ama Ampomah
+                </div>
+                <div class="review-designation">
+                    CEO and Founder Inc
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="picture">
+                <img class="profile-pic" src="icons and logos/profile-2.svg">
+            </div>
+            <div class="rating">
+
+            </div>
+            <p class="review-description">
+                Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit.
+                Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante.
+                Proin iaculis platea ipsum sagittis ac eu aliquam quis. Ornare tincidunt tempus semper
+            </p>
+            <div class="nd">
+                <div class="review-name">
+                    Kweku Annan
+                </div>
+                <div class="review-designation">
+                    CEO and Founder Inc
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="picture">
+                <img class="profile-pic" src="icons and logos/profile-3">
+            </div>
+            <div class="rating">
+
+            </div>
+            <p class="review-description">
+                Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit.
+                Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante.
+                Proin iaculis platea ipsum sagittis ac eu aliquam quis. Ornare tincidunt tempus semper
+            </p>
+            <div class="nd">
+                <div class="review-name">
+                    Okino Moe
+                </div>
+                <div class="review-designation">
+                    CEO and Founder Inc
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

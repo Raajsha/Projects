@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 244, 244);
+    height: 90vh;
+}
+h1{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+#weather-app{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+button{
+    background-color: rgb(0, 123, 255);
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding:2px 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(0, 86, 179);
+}
+#cityInput{
+    font-size: 16px;
+    line-height: 38px;
+    width: 190px;
+    border-radius: 4px;
+    border-color: rgb(217, 217, 217);
+    padding: 0px 6px;
+}
+#Search{
+    padding: 0px 15px;
+}
+#toggleTemp{
+    margin-right: 5px;
+}
+.info{
+    text-align: center;
+}

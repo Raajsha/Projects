@@ -21,7 +21,7 @@ function fetchWeather() {
 }
 
 function displayWeather(current) {
-
+    document.getElementById('cityName').textContent=`City: ${current.data[0].city_name}`;
     document.getElementById('temp').textContent = `Temperature: ${current.data[0].app_temp} °C`;
     document.getElementById('conditions').textContent = `Description: ${current.data[0].weather.description}`;
     document.getElementById('humidity').textContent = `Humidity: ${current.data[0].rh}%`;
@@ -48,10 +48,10 @@ function getCurrentLocation() {
         navigator.geolocation.getCurrentPosition(position => {
             const { latitude, longitude } = position.coords;
 
-            fetch(`${baseUrl}?key=${apiKey}&q=${latitude},${longitude}`)
+            fetch(`${baseUrl}?lat=${latitude}&lon=${longitude}&key=${apiKey}`)
                 .then(response => response.json())
-                .then(data => {
-                    displayWeather(data);
+                .then(current => {
+                    displayWeather(current);
                 })
                 .catch(error => console.error('Error fetching weather data:', error));
         });
